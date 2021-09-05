@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+	<style type="text/css">
+		.alert {
+			padding: 20px;
+			color: #fff;
+			position: relative;
+		}
+		.alert-success {
+			background-color: #4CAF50;
+		}
+		.alert-info {
+			background-color: #44acf3;
+		}
+		.alert-warning {
+			background-color: #ffaa2c;
+		}
+		.alert-danger {
+			background-color: #f3645c;
+		}
+		.alert-primary {
+			background-color: #2c65a2;
+		}
+		.alert-secondary {
+			background-color: #d2ba8f;
+		}
+		.alert-dark {
+			background-color: #100c14;
+		}
+		.alert-light {
+			background-color: #dae1df;
+		}
+		.closebtn {
+			position: absolute;
+			right: 20px;
+			width: 20px;
+			text-align: center;
+			height: 20px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Alerts</h2>
+		<p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+		<div class="alert alert-success">
+			<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+		</div>
+	  	<div class="alert alert-info">
+	  		<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+	  	</div>
+	  	<div class="alert alert-warning">
+	  		<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+	  	</div>
+	  	<div class="alert alert-danger">
+	  		<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+	  	</div>
+	  	<div class="alert alert-primary">
+	  		<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Primary!</strong> Indicates an important action.
+	  	</div>
+	  	<div class="alert alert-secondary">
+	  		<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Secondary!</strong> Indicates a slightly less important action.
+	  	</div>
+	  	<div class="alert alert-dark">
+	  		<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Dark!</strong> Dark grey alert.
+	  	</div>
+	  	<div class="alert alert-light">
+	  		<span class="closebtn" onclick="closeE(this)">&times;</span>
+		    <strong>Light!</strong> Light grey alert.
+	  	</div>
+	</div>
+	<script type="text/javascript">
+		function closeE(ev) {
+			ev.parentElement.style.display = 'none';
+		}
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
